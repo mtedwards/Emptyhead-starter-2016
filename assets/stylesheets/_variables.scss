@@ -1,0 +1,49 @@
+$purple: #A16E77;
+
+
+/* Page Styles */
+$background__color: #fff;
+
+$primary__color: $purple;
+
+/* FONTS */
+
+$font__main: 'Montserrat', sans-serif;
+$font__size: 16px;
+$font__line-height-body: 1.5;
+$font__color: #333;
+
+
+
+
+
+
+/* Buttons */
+$button__border-color: $primary__color;
+$button__background-color: $primary__color;
+
+$button__font-color: white;
+
+$button__hover_border-color: $primary__color;
+$button__hover_color: $primary__color;
+
+$button__active_border-color: $primary__color;
+$button__active_color: $primary__color;
+
+$background__color: white;
+
+/* MAPPY BREAKPOINTS  */
+$breakpoints: (
+  'small': 320px,
+  'medium': 700px,
+  'large': 1000px
+);
+
+
+/* Susy */
+
+$susy: (
+  columns: 6,
+  container: 64.5em,
+  global-box-sizing: border-box
+)

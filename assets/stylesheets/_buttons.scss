@@ -1,0 +1,26 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: $button__border-color;
+	color: $button__font-color;
+	background: $button__background-color;
+	line-height: 1;
+	padding: .6em 1em .4em;
+
+	&.expand {
+		display: block;
+	}
+
+	&:hover {
+		border-color: $button__hover_border-color;
+		background: 	$button__hover_color;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $button__active_border-color;
+		background: 	$button__active_color;
+	}
+}

@@ -1,0 +1,23 @@
+{
+  "name": "emptyheadstarter",
+  "version": "1.0.0",
+  "description": "Emptyhead Starter",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9"
+  },
+  "author": "Matt Edwards",
+  "license": "ISC"
+}

@@ -1,0 +1,138 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+
+	&:focus {
+		background-color: white;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: white;
+		display: block;
+		@include font-size(0.875);
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar. */
+	}
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/* clearfix */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	@include clearfix;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	@include clearfix-after;
+}
+
+.aligncenter, .alignright, .alignleft {
+  display:block;
+  margin: 1em auto;
+}
+
+@include mappy-bp(medium) {
+
+  .alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+
+  .alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+
+	img[class*="wp-image-"] {
+		@include center-block;
+	}
+
+	.wp-caption-text {
+		margin: 0.8075em 0;
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+.skip-link {
+ position:absolute;
+ left:-10000px;
+ top:auto;
+ width:1px;
+ height:1px;
+ overflow:hidden;
+
+ &:focus {
+			 position:static;
+			 width:auto;
+			 height:auto;
+	 }
+ }

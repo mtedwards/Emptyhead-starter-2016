@@ -1,0 +1,23 @@
+{
+  "name": "emptyhead",
+  "description": "Emptyhead Starter",
+  "main": "gulpfile.js",
+  "authors": [
+    "Matt Edwards"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.fitvids": "FitVids#~1.1.0",
+    "mappy-breakpoints": "~0.2.3",
+    "susy": "~2.2.12"
+  }
+}

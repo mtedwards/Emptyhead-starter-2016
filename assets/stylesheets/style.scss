@@ -1,0 +1,57 @@
+/*
+Theme Name: Emptyhead_Starter
+Theme URI: http://components.underscores.me/
+Author: Matt Edwards
+Author URI: http://emptyhead.com.au
+Description: A one page theme for Emptyhead
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: emptyheadstarter
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Emptyhead_Starter is created by the theme generator at http://components.underscores.me/, (C) 2015-2016 Automattic, Inc.
+Components is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+
+/* Components */
+
+@import
+	"../../bower_components/mappy-breakpoints/mappy-breakpoints",
+	"../../bower_components/susy/sass/susy";
+
+	/* SETUP */
+
+	@import
+		"normalize",
+		"variables",
+		"mixins",
+		"shared",
+		"buttons",
+		"typography";
+
+.site-main {
+	@include container;
+	padding: 0 1em;
+
+	.left, .right {
+		@include span(6 of 6);
+		margin-bottom: gutter();
+
+		@include mappy-bp(medium) {
+			@include span(3 of 6);
+		}
+	}
+
+	.right {
+		@include last;
+	}
+
+}
