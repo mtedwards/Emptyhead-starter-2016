@@ -35,23 +35,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		"mixins",
 		"shared",
 		"buttons",
-		"typography";
+		"typography",
+		"header";
 
 .site-main {
 	@include container;
 	padding: 0 1em;
-
-	.left, .right {
-		@include span(6 of 6);
-		margin-bottom: gutter();
-
-		@include mappy-bp(medium) {
-			@include span(3 of 6);
-		}
-	}
-
-	.right {
-		@include last;
-	}
-
 }
